@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SimpleNote</string>
+    <string name="no_data">No data</string>
+    <string name="put_something_here">Put something here</string>
+    <string name="get">Get</string>
+    <string name="save">Save</string>
+    <string name="empty_string">Empty string</string>
+</resources>

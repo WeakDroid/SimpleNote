@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/dataTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center|start"
+        android:hint="@string/empty_string"
+        android:minHeight="48dp"
+        android:textColorHint="#C5BABA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dataEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/put_something_here"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#C5BABA"
+        android:textColorLink="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/receiveButton"
+        app:layout_constraintStart_toStartOf="@+id/receiveButton"
+        app:layout_constraintTop_toBottomOf="@+id/receiveButton" />
+
+    <Button
+        android:id="@+id/receiveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#8C775A"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/get"
+        android:textSize="17sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/dataTextView"
+        app:layout_constraintStart_toStartOf="@+id/dataTextView"
+        app:layout_constraintTop_toBottomOf="@+id/dataTextView" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#8A4E3A"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/save"
+        android:textSize="17sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/dataEditText"
+        app:layout_constraintStart_toStartOf="@+id/dataEditText"
+        app:layout_constraintTop_toBottomOf="@+id/dataEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
